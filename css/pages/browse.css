@@ -1,0 +1,380 @@
+/* ===========================
+   Jisr El-Khair
+   Browse Page
+=========================== */
+
+/* ---------- General ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:linear-gradient(
+        180deg,
+        #F8FCF9 0%,
+        #EEF7F0 100%
+    );
+
+    color:#1F2937;
+
+}
+
+/* ---------- Hero ---------- */
+
+.browse-hero{
+
+    height:380px;
+
+    background:
+    linear-gradient(
+        rgba(20,35,25,.65),
+        rgba(20,35,25,.65)
+    ),
+    url("../../assets/images/hero/yy.png");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    color:rgb(0, 0, 0);
+    max-width:700px;
+    padding:20px;
+
+}
+
+.hero-content h1{
+
+    font-size:58px;
+    margin-bottom:18px;
+
+}
+
+.hero-content p{
+
+    font-size:22px;
+    color:#0a0909;
+    line-height:1.7;
+
+}
+
+/* ---------- Filters ---------- */
+
+.filters{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:-45px auto 60px;
+
+    background:white;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.filters input,
+.filters select{
+
+    flex:1;
+    min-width:180px;
+
+    padding:15px;
+
+    border:1px solid #D6D6D6;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    background:white;
+
+}
+
+.filters input:focus,
+.filters select:focus{
+
+    outline:none;
+
+    border-color:#2E8B57;
+
+}
+
+/* ---------- Search Button ---------- */
+
+.filters .primary{
+
+    background:#2E8B57;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 28px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.filters .primary:hover{
+
+    background:#256F46;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+
+
+/* ===========================
+   Items Grid
+=========================== */
+
+.items-grid{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:60px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.item-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    border:1px solid #E8E8E8;
+
+}
+
+.item-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   Image
+=========================== */
+
+.item-image{
+
+    height:240px;
+
+    background:linear-gradient(
+        135deg,
+        #DFF5E7,
+        #B7E4C7
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:80px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.item-card:hover .item-image{
+
+    transform:scale(1.03);
+
+    transition:.4s;
+
+}
+
+/* ===========================
+   Status
+=========================== */
+
+.status{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    color:white;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+.available{
+
+    background:#2E8B57;
+
+}
+
+.reserved{
+
+    background:#F59E0B;
+
+}
+
+/* ===========================
+   Card Content
+=========================== */
+
+.item-content{
+
+    padding:24px;
+
+}
+
+.item-content h3{
+
+    font-size:28px;
+
+    color:#1F2937;
+
+    margin-bottom:18px;
+
+}
+
+.item-content p{
+
+    color:#6B7280;
+
+    margin-bottom:10px;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.card-buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:25px;
+
+}
+
+.favorite{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#F3F4F6;
+
+    cursor:pointer;
+
+    font-size:24px;
+
+    transition:.3s;
+
+}
+
+.favorite:hover{
+
+    background:#FFE5E5;
+
+    transform:scale(1.1);
+
+}
+
+.card-buttons .primary{
+
+    padding:14px 22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2E8B57;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.card-buttons .primary:hover{
+
+    background:#256F46;
+
+    transform:translateY(-2px);
+
+}
+body{
+
+    background-color:#F3E9DD;
+
+}

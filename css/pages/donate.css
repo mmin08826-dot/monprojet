@@ -1,0 +1,540 @@
+.donate-hero{
+
+    position: relative;
+
+    height: 450px;
+
+    background-image: url("../../assets/images/hero/yy.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+.donate-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(22, 65, 35, 0.45);
+
+}
+
+
+
+.hero-content{
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    color: rgb(0, 0, 0);
+
+}
+
+.hero-content h1{
+
+    font-size: 64px;
+
+    margin-bottom: 20px;
+
+}
+
+.hero-content p{
+
+    font-size: 22px;
+
+}
+
+/* =========================
+   Form Card
+========================= */
+/* ===========================
+   Donation Form Card
+=========================== */
+
+.donation-form{
+
+
+
+    max-width:900px;
+
+
+
+    margin:60px auto;
+
+
+
+    padding:0 20px;
+
+
+
+}
+
+
+
+.donation-form form{
+
+
+
+    background:white;
+
+
+
+    padding:45px;
+
+
+
+    border-radius:22px;
+
+
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+
+
+}
+
+/* =========================
+   Upload Box
+========================= */
+
+
+
+.upload-box{
+
+    border:3px dashed #2E8B57;
+
+    border-radius:20px;
+
+    padding:55px;
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    background:#f8fffb;
+
+}
+
+.upload-box:hover{
+
+    background:#eef8f1;
+
+}
+
+.upload-icon{
+
+    font-size:65px;
+
+    margin-bottom:15px;
+
+}
+
+.upload-box h3{
+
+    font-size:30px;
+
+    color:#222;
+
+    margin-bottom:10px;
+
+}
+
+.upload-box p{
+
+    color:#777;
+
+}
+
+.upload-box input{
+
+    margin-top:20px;
+
+}
+
+
+/* =========================
+   Form
+========================= */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:25px;
+
+}
+
+.form-group label{
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:#222;
+
+}
+
+.form-group input,
+
+.form-group select,
+
+.form-group textarea{
+
+    padding:16px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus,
+
+.form-group textarea:focus{
+
+    outline:none;
+
+    border-color:#2E8B57;
+
+    box-shadow:0 0 0 4px rgba(46,139,87,.15);
+
+}
+
+
+/* =========================
+   Two Columns
+========================= */
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+
+/* =========================
+   Publish Button
+========================= */
+
+.publish-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#2E8B57;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-top:15px;
+
+}
+
+.publish-btn:hover{
+
+    background:#267347;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(46,139,87,.25);
+
+}
+
+.publish-btn:active{
+
+    transform:scale(.98);
+
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:768px){
+
+.form-row{
+
+grid-template-columns:1fr;
+
+}
+
+.donate-hero h1{
+
+font-size:42px;
+
+}
+
+}
+
+/* =========================
+   Image Preview
+========================= */
+
+.preview-container{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-top:25px;
+
+}
+
+.preview-container img{
+
+    width:130px;
+
+    height:130px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.preview-container img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   Preview Card
+=========================== */
+
+.preview-card{
+
+    position:relative;
+
+    width:140px;
+
+    height:140px;
+
+}
+
+.preview-card img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+
+
+/* ===========================
+   Delete Button
+=========================== */
+
+.delete-btn{
+
+    position:absolute;
+
+    top:8px;
+    right:8px;
+
+    width:26px;
+    height:26px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#111;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:13px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    opacity:.9;
+
+    transition:.25s;
+}
+
+.delete-btn:hover{
+
+    background:#000;
+
+    transform:scale(1.15);
+
+    opacity:1;
+
+}
+
+/* ==========================
+   Responsive Design
+========================== */
+
+@media (max-width: 992px){
+
+    .donate-hero{
+
+        height:350px;
+
+        padding:40px;
+
+        justify-content:center;
+
+        text-align:center;
+
+    }
+
+    .hero-content h1{
+
+        font-size:48px;
+
+    }
+
+    .hero-content p{
+
+        font-size:20px;
+
+    }
+
+    .donation-form{
+
+        margin:-50px 20px 50px;
+
+        padding:30px;
+
+    }
+
+    form{
+
+        grid-template-columns:1fr;
+
+    }
+
+}@media (max-width:768px){
+
+    .hero-content h1{
+
+        font-size:38px;
+
+    }
+
+    .hero-content p{
+
+        font-size:18px;
+
+    }
+
+    .upload-box{
+
+        padding:40px 20px;
+
+    }
+
+    .form-row{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    input,
+    select,
+    textarea{
+
+        width:100%;
+
+    }
+
+    .publish-btn{
+
+        width:100%;
+
+    }
+
+}
+@media (max-width:480px){
+
+    .hero-content h1{
+
+        font-size:30px;
+
+    }
+
+    .hero-content p{
+
+        font-size:16px;
+
+    }
+
+    .donation-form{
+
+        padding:20px;
+
+        border-radius:20px;
+
+    }
+
+}
+body{
+
+    background-color:#F3E9DD;
+
+}

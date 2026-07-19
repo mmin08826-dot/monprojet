@@ -1,0 +1,131 @@
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+}
+
+/* الزر الأخضر */
+
+.primary{
+
+    background:#2E8B57;
+    color:white;
+
+    box-shadow:0 8px 20px rgba(46,139,87,.25);
+
+}
+
+.primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 28px rgba(46,139,87,.35);
+
+}
+
+.primary:active{
+
+    transform:translateY(2px) scale(.96);
+
+    box-shadow:0 3px 8px rgba(46,139,87,.25);
+
+    filter:brightness(.9);
+
+}
+
+/* الزر الأبيض */
+
+.secondary{
+
+    background:white;
+
+    color:#2E8B57;
+
+    border:2px solid #2E8B57;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.secondary:hover{
+
+    background:#2E8B57;
+
+    color:white;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 28px rgba(46,139,87,.25);
+
+}
+
+.secondary:active{
+
+    transform:translateY(2px) scale(.96);
+
+    box-shadow:0 3px 8px rgba(0,0,0,.15);
+
+    filter:brightness(.9);
+
+}
+
+
+/* ===========================
+   Language Selector
+=========================== */
+
+.language-selector{
+
+    margin-left:25px;
+
+}
+
+.language-selector select{
+
+    padding:8px 12px;
+
+    border-radius:10px;
+
+    border:1px solid #2E8B57;
+
+    background:white;
+
+    color:#2E8B57;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.language-selector select:hover{
+
+    background:#2E8B57;
+
+    color:white;
+
+}

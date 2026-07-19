@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Donate | Jisr El-Khair</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/donate.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="assets/images/logo/logo.png" alt="Jisr El-Khair Logo">
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse</a>
+        <a href="donate.html">Donate</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+        <div class="language-selector">
+
+    🌐
+
+    <select id="language">
+
+        <option value="en">English</option>
+
+        <option value="fr">Français</option>
+
+        <option value="ar">العربية</option>
+
+    </select>
+
+</div>
+    </nav>
+
+</header>
+
+<main>
+
+<section class="donate-hero">
+
+    <div class="hero-content">
+
+        <h1>Donate an Item</h1>
+
+        <p>
+            Share something you no longer need with families across Algeria
+        </p>
+
+    </div>
+
+</section>
+
+<section class="donation-form">
+
+<form>
+
+<div class="upload-box" id="uploadBox">
+
+    <input
+        type="file"
+        id="imageInput"
+        accept="image/*"
+        multiple
+        hidden>
+
+    <div class="upload-icon">📷</div>
+
+    <h3>Upload Photos</h3>
+
+    <p>Click here to choose your images</p>
+
+</div>
+
+<div id="previewContainer" class="preview-container"></div>
+
+
+<div class="form-group">
+
+<label>Item Name</label>
+
+<input
+type="text"
+placeholder="Example: Winter Jacket">
+
+</div>
+
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Category</label>
+
+<select>
+
+<option>Choose Category</option>
+
+<option>Clothes</option>
+
+<option>Furniture</option>
+
+<option>Books</option>
+
+<option>Electronics</option>
+
+<option>Toys</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Condition</label>
+
+<select>
+
+<option>Select Condition</option>
+
+<option>New</option>
+
+<option>Excellent</option>
+
+<option>Very Good</option>
+
+<option>Good</option>
+
+<option>Acceptable</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Wilaya</label>
+
+<select>
+
+<option>Choose Wilaya</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Commune</label>
+
+<select>
+
+<option>Choose Commune</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Description</label>
+
+<textarea
+rows="6"
+placeholder="Describe the item..."></textarea>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+placeholder="+213">
+
+</div>
+
+
+<button class="publish-btn">
+
+🚀 Publish Donation
+
+</button>
+
+</form>
+
+</section>
+
+</main>
+
+
+
+</body>
+</html>
+
+<script src="js/donate.js"></script>
+<script src="js/language.js"></script>
+</body>
+</html>

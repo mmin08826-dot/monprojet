@@ -1,0 +1,72 @@
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:80px;
+
+    background:
+    radial-gradient(circle at top left,#6EE7B7 0%,transparent 30%),
+    radial-gradient(circle at bottom right,#34D399 0%,transparent 25%),
+    linear-gradient(135deg,#F8FFFC,#EFFFF7);
+
+}
+
+.hero-content{
+
+    max-width:700px;
+
+    text-align:center;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    background:#E8FFF3;
+
+    color:#059669;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    font-size:72px;
+
+    line-height:1.1;
+
+    color:#063B2E;
+
+    margin-bottom:30px;
+
+}
+
+.hero p{
+
+    font-size:23px;
+
+    color:#4B5563;
+
+    line-height:1.8;
+
+    margin-bottom:45px;
+
+}
