@@ -4,12 +4,11 @@ const previewContainer = document.getElementById("previewContainer");
 
 let selectedImages = [];
 
-// فتح اختيار الصور
 uploadBox.addEventListener("click", () => {
     imageInput.click();
 });
 
-// عند اختيار الصور
+
 imageInput.addEventListener("change", (event) => {
 
     const files = Array.from(event.target.files);
@@ -24,7 +23,7 @@ imageInput.addEventListener("change", (event) => {
 
 });
 
-// عرض الصور
+
 function displayImages(){
 
     previewContainer.innerHTML = "";
@@ -57,7 +56,7 @@ function displayImages(){
 
 }
 
-// حذف صورة
+
 function removeImage(index){
 
     selectedImages.splice(index,1);
